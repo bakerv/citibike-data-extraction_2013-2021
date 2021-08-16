@@ -1,0 +1,2028 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='all'>
+      <format attr='color' value='#1d1066' />
+      <format attr='font-family' value='Verlag Bold' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='bike_lifespan' inline='true' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bike_lifespan' name='textscan.0j6tkid0evqgjo12sspqi1ag0wz9'>
+            <connection class='textscan' directory='C:/Users/Victor/Desktop/Data_Science/Data_Sets/citibike' filename='bike_lifespan.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0j6tkid0evqgjo12sspqi1ag0wz9' name='bike_lifespan.csv' table='[bike_lifespan#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Bike ID' ordinal='1' />
+            <column datatype='datetime' name='First Ride' ordinal='2' />
+            <column datatype='datetime' name='Last Ride' ordinal='3' />
+            <column datatype='real' name='Total Ride Time (Seconds)' ordinal='4' />
+            <column datatype='integer' name='Total Rides' ordinal='5' />
+            <column datatype='integer' name='Life Span (Years)' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0j6tkid0evqgjo12sspqi1ag0wz9' name='bike_lifespan.csv' table='[bike_lifespan#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Bike ID' ordinal='1' />
+            <column datatype='datetime' name='First Ride' ordinal='2' />
+            <column datatype='datetime' name='Last Ride' ordinal='3' />
+            <column datatype='real' name='Total Ride Time (Seconds)' ordinal='4' />
+            <column datatype='integer' name='Total Rides' ordinal='5' />
+            <column datatype='integer' name='Life Span (Years)' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bike ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bike ID]</local-name>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias>Bike ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Ride</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[First Ride]</local-name>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias>First Ride</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Ride</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Last Ride]</local-name>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias>Last Ride</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Ride Time (Seconds)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Ride Time (Seconds)]</local-name>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias>Total Ride Time (Seconds)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Rides</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Rides]</local-name>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias>Total Rides</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life Span (Years)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Life Span (Years)]</local-name>
+            <parent-name>[bike_lifespan.csv]</parent-name>
+            <remote-alias>Life Span (Years)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bikes in Circulation' datatype='integer' name='[Calculation_71213174328008707]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([First Ride])-COUNT([Last Ride])' />
+      </column>
+      <column caption='Total Ride Time (Hours)' datatype='real' name='[Calculation_71213174330892292]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND(([Total Ride Time (Seconds)]/60)/60,0)' />
+      </column>
+      <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Bike ID])' />
+      </column>
+      <column caption='Average Age' datatype='real' name='[Calculation_864128184277827592]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND(AVG([Life Span (Years)]),1)' />
+      </column>
+      <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+      <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+      <column caption='Age (Years)' datatype='integer' name='[Life Span (Years)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='bike_lifespan.csv' datatype='table' name='[__tableau_internal_object_id__].[bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219]' role='measure' type='quantitative' />
+      <column-instance column='[Last Ride]' derivation='Month' name='[mn:Last Ride:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Life Span (Years)]' derivation='None' name='[none:Life Span (Years):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Last Ride]' derivation='Quarter' name='[qr:Last Ride:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Last Ride]' derivation='Year' name='[yr:Last Ride:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Age (Years))' hidden='true' name='[Action (Age (Years))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Life Span (Years):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Bike Status)' hidden='true' name='[Action (Bike Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Bike Status,Age (Years))' hidden='true' name='[Action (Bike Status,Age (Years))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+          <groupfilter function='level-members' level='[none:Life Span (Years):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Bike Status,YEAR(First Recorded Activity (Year)))' hidden='true' name='[Action (Bike Status,YEAR(First Recorded Activity (Year)))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+          <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Bike Status,YEAR(First Ride))' hidden='true' name='[Action (Bike Status,YEAR(First Ride))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+          <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Bike Status,YEAR(Last Recorded Activity))' hidden='true' name='[Action (Bike Status,YEAR(Last Recorded Activity))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+          <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Bike Status,YEAR(Last Ride))' hidden='true' name='[Action (Bike Status,YEAR(Last Ride))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+          <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Email)' hidden='true' name='[Action (Email)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_864128184237154306]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Last Ride))' hidden='true' name='[Action (MONTH(Last Ride))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Last Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Date of Introduction to the Fleet (Year)))' hidden='true' name='[Action (YEAR(Date of Introduction to the Fleet (Year)))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(First Recorded Activity (Year)))' hidden='true' name='[Action (YEAR(First Recorded Activity (Year)))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(First Ride))' hidden='true' name='[Action (YEAR(First Ride))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(First Ride),YEAR(Last Ride),QUARTER(Last Ride))' hidden='true' name='[Action (YEAR(First Ride),YEAR(Last Ride),QUARTER(Last Ride))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+          <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+          <groupfilter function='level-members' level='[qr:Last Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Last Ride))' hidden='true' name='[Action (YEAR(Last Ride))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Last Ride),QUARTER(Last Ride))' hidden='true' name='[Action (YEAR(Last Ride),QUARTER(Last Ride))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+          <groupfilter function='level-members' level='[qr:Last Ride:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='35000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Last Ride:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>2021</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:First Ride:ok]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#317097'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#93cdcf'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>2021</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_864128184285982729:nk]' palette='cyclic_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Active&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;Removed From Service&quot;</bucket>
+            </map>
+            <map to='#80b0d5'>
+              <bucket>&quot;Current In Use&quot;</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>&quot;Inactive&quot;</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>&quot;Currently In Use&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bike_lifespan.csv' id='bike_lifespan.csv_DF40B363D9CF4537BCF27B100ECEC219'>
+            <properties context=''>
+              <relation connection='textscan.0j6tkid0evqgjo12sspqi1ag0wz9' name='bike_lifespan.csv' table='[bike_lifespan#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Bike ID' ordinal='1' />
+                  <column datatype='datetime' name='First Ride' ordinal='2' />
+                  <column datatype='datetime' name='Last Ride' ordinal='3' />
+                  <column datatype='real' name='Total Ride Time (Seconds)' ordinal='4' />
+                  <column datatype='integer' name='Total Rides' ordinal='5' />
+                  <column datatype='integer' name='Life Span (Years)' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1_4F859C741D284992B7172DA90B28DACB]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Cohort Longevity' type='sheet' worksheet='Click the columns to explore longevity for each cohort' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Cohort Longevity' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age of Bikes Removed From Service'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column caption='Age (Years)' datatype='integer' name='[Life Span (Years)]' role='measure' type='quantitative' />
+            <column-instance column='[Bike ID]' derivation='Count' name='[cnt:Bike ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Life Span (Years)]' derivation='None' name='[none:Life Span (Years):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]'>
+            <groupfilter function='member' level='[none:Calculation_864128184285982729:nk]' member='&quot;Removed From Service&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Life Span (Years):ok]' value='32' />
+            <format attr='title' class='0' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[cnt:Bike ID:qk]' scope='rows' value='Bike Quantity' />
+            <format attr='width' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[cnt:Bike ID:qk]' value='100' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Life Span (Years):ok]' value='51' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='60' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='size' value='1.7471270561218262' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='396' />
+                <format attr='maxheight' value='396' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[cnt:Bike ID:qk]</rows>
+        <cols>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Life Span (Years):ok]</cols>
+      </table>
+      <simple-id uuid='{25A81BA4-FB72-459C-9E9B-3D325EE7AD25}' />
+    </worksheet>
+    <worksheet name='Average Lifespan '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column caption='ROUND(AVG([Age (Years)]),1)' datatype='real' name='[Calculation_71213174326874114]' role='measure' type='quantitative' user:unnamed='Average Lifespan'>
+              <calculation class='tableau' formula='ROUND(AVG([Life Span (Years)]),1)' />
+            </column>
+            <column caption='Average Age' datatype='real' name='[Calculation_864128184277827592]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND(AVG([Life Span (Years)]),1)' />
+            </column>
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column caption='Age (Years)' datatype='integer' name='[Life Span (Years)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_71213174326874114]' derivation='User' name='[usr:Calculation_71213174326874114:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_864128184277827592]' derivation='User' name='[usr:Calculation_864128184277827592:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]'>
+            <groupfilter function='level-members' level='[yr:First Ride:ok]' user:ui-action-filter='[Action1_4F859C741D284992B7172DA90B28DACB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]'>
+            <groupfilter function='member' level='[none:Calculation_864128184285982729:nk]' member='&quot;Removed From Service&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]</column>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='599' />
+            <format attr='height' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184277827592:ok]' value='118' />
+            <format attr='color' value='#dd282b' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184277827592:ok]' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#d37295' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_71213174326874114:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'> Average Lifespan: &lt;</run>
+                <run fontsize='20'>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_71213174326874114:ok]</run>
+                <run fontsize='20'>&gt; years</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='6.9928369522094727' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184277827592:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7ADA13FA-3A90-48D3-AAF1-CE37CAA29179}' />
+    </worksheet>
+    <worksheet name='Average Lifespan of Bikes Removed From Service by Year of Introduction to the Fleet'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bike ID])' />
+            </column>
+            <column caption='Average Age' datatype='real' name='[Calculation_864128184277827592]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND(AVG([Life Span (Years)]),1)' />
+            </column>
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column caption='Age (Years)' datatype='integer' name='[Life Span (Years)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_864128184277827592]' derivation='User' name='[usr:Calculation_864128184277827592:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]'>
+            <groupfilter function='member' level='[none:Calculation_864128184285982729:nk]' member='&quot;Removed From Service&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]' value='28' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='16' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='16' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' />
+              <tooltip column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6591712236404419' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184277827592:qk]</rows>
+        <cols>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]</cols>
+      </table>
+      <simple-id uuid='{21C5FE90-6DA5-4C43-8AFA-E5343164685F}' />
+    </worksheet>
+    <worksheet name='Average Ride Time (Hours)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column caption='Total Ride Time (Hours)' datatype='real' name='[Calculation_71213174330892292]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND(([Total Ride Time (Seconds)]/60)/60,0)' />
+            </column>
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column caption='Age (Years)' datatype='integer' name='[Life Span (Years)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total Ride Time (Seconds)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_71213174330892292]' derivation='None' name='[none:Calculation_71213174330892292:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Life Span (Years)]' derivation='None' name='[none:Life Span (Years):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]'>
+            <groupfilter function='level-members' level='[yr:First Ride:ok]' user:ui-action-filter='[Action1_4F859C741D284992B7172DA90B28DACB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_864128184285982729:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]</column>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Life Span (Years):ok]' value='26' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='width' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Life Span (Years):ok]' value='96' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_71213174330892292:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_71213174330892292:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Life Span (Years):ok]</rows>
+        <cols>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_71213174330892292:qk]</cols>
+      </table>
+      <simple-id uuid='{BCF5FFE5-C946-44FC-95FE-D6E65FA9714F}' />
+    </worksheet>
+    <worksheet name='Bike Quantity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bike ID])' />
+            </column>
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:ok]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:ok]' value='122' />
+            <format attr='width' value='517' />
+            <format attr='color' value='#dd282b' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:ok]' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'><![CDATA[<[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]> Bikes Deployed]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:ok]</rows>
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{5427DA09-60E3-4BA7-A511-6AE959768657}' />
+    </worksheet>
+    <worksheet name='Click the columns to explore longevity for each cohort'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bike ID])' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]' value='25' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]</rows>
+        <cols>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]</cols>
+      </table>
+      <simple-id uuid='{B376EC10-4F61-4E77-AD67-FE7361B8EB04}' />
+    </worksheet>
+    <worksheet name='Operational  Timeline of Selected Cohort'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bike ID])' />
+            </column>
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Last Ride]' derivation='Quarter' name='[qr:Last Ride:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Last Ride]' derivation='Year' name='[yr:Last Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]'>
+            <groupfilter function='level-members' level='[yr:First Ride:ok]' user:ui-action-filter='[Action1_4F859C741D284992B7172DA90B28DACB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_864128184285982729:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]</column>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[qr:Last Ride:ok]' value='138' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[qr:Last Ride:ok]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]</rows>
+        <cols>([federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:Last Ride:ok] / [federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[qr:Last Ride:ok])</cols>
+        <show-full-range>
+          <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Last Ride]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{51497760-5686-438E-BCE8-08396BF55C29}' />
+    </worksheet>
+    <worksheet name='Operational Timeline Title'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Service Timeline of  &lt;</run>
+            <run>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]</run>
+            <run>&gt; Cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]'>
+            <groupfilter function='level-members' level='[yr:First Ride:ok]' user:ui-action-filter='[Action1_4F859C741D284992B7172DA90B28DACB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <encodings>
+              <lod column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{830F7012-F76A-4816-8A98-9F19C9AB81B1}' />
+    </worksheet>
+    <worksheet name='Quantity Bikes Currently In Use'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bike ID])' />
+            </column>
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]'>
+            <groupfilter function='level-members' level='[yr:First Ride:ok]' user:ui-action-filter='[Action1_4F859C741D284992B7172DA90B28DACB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]'>
+            <groupfilter function='member' level='[none:Calculation_864128184285982729:nk]' member='&quot;Currently In Use&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]</column>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='406' />
+            <format attr='height' value='142' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' />
+              <text column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]</run>
+                <run fontsize='20'>&gt; Currently In Use</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{CC519A8F-DD88-4A1D-BFC0-F3FADD5A73EB}' />
+    </worksheet>
+    <worksheet name='Quantity Bikes Removed From Service'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bike ID])' />
+            </column>
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]'>
+            <groupfilter function='level-members' level='[yr:First Ride:ok]' user:ui-action-filter='[Action1_4F859C741D284992B7172DA90B28DACB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]'>
+            <groupfilter function='member' level='[none:Calculation_864128184285982729:nk]' member='&quot;Removed From Service&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]</column>
+            <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Date of Introduction to the Fleet (Year)))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' />
+              <text column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]</run>
+                <run fontsize='20'>&gt; Removed From Service</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{375FA400-83AE-4EDD-8A2E-9C9F0F6CFD5C}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CC1FBD1E-4798-4795-8033-A00FE1A1644A}' />
+    </worksheet>
+    <worksheet name='The majority of bikes deployed by citibike are no longer in use'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_lifespan' name='federated.0q6kmbt05hpunc15ltx2a0gpk5bf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+            <column datatype='integer' name='[Bike ID]' role='measure' type='quantitative' />
+            <column caption='Bike Quantity' datatype='integer' name='[Calculation_864128184234082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bike ID])' />
+            </column>
+            <column caption='Bike Status' datatype='string' name='[Calculation_864128184285982729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF YEAR([Last Ride]) = 2021&#13;&#10;THEN &quot;Currently In Use&quot;&#13;&#10;ELSE &quot;Removed From Service&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Date of Introduction to the Fleet (Year)' datatype='datetime' name='[First Ride]' role='dimension' type='ordinal' />
+            <column caption='Date Removed From Service (Year)' datatype='datetime' name='[Last Ride]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_864128184285982729]' derivation='None' name='[none:Calculation_864128184285982729:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_864128184234082305]' derivation='User' name='[usr:Calculation_864128184234082305:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' field-type='quantitative' major-origin='0' major-spacing='1000' minor-origin='0' minor-show='false' minor-spacing='100' scope='rows' type='space' />
+            <format attr='width' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' value='82' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]' value='58' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='44' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' value='10' />
+            <format attr='font-size' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]' value='10' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontsize='11'><![CDATA[<[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]> Bike Cohort]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]> <[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6591712236404419' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[usr:Calculation_864128184234082305:qk]</rows>
+        <cols>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[yr:First Ride:ok]</cols>
+        <show-full-range>
+          <column>[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[First Ride]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{FC48944A-A5F3-461C-82F3-FA6E396A456B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Cohort Longevity'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98098' id='26' param='horz' type-v2='layout-flow' w='99002' x='499' y='951'>
+            <zone h='98098' id='24' type-v2='layout-basic' w='99002' x='499' y='951'>
+              <zone h='82162' id='14' param='horz' type-v2='layout-flow' w='99002' x='499' y='951'>
+                <zone h='82162' id='12' type-v2='layout-basic' w='99002' x='499' y='951'>
+                  <zone h='82162' id='6' param='horz' type-v2='layout-flow' w='47939' x='499' y='951'>
+                    <zone h='82162' id='8' name='Click the columns to explore longevity for each cohort' w='47939' x='499' y='951'>
+                      <layout-cache cell-count-w='9' minheight='196' non-cell-size-w='71' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='38344' id='11' name='Operational  Timeline of Selected Cohort' show-title='false' w='51063' x='48438' y='7134'>
+                    <layout-cache cell-count-w='32' minheight='172' non-cell-size-w='72' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6183' id='22' name='Operational Timeline Title' w='51063' x='48438' y='951'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='37635' id='23' name='Average Ride Time (Hours)' w='51063' x='48438' y='45478'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='15936' id='21' param='horz' type-v2='layout-flow' w='99002' x='499' y='83113'>
+                <zone h='15936' id='18' name='Average Lifespan ' show-title='false' w='33000' x='499' y='83113'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='15936' id='20' name='Quantity Bikes Removed From Service' show-title='false' w='33000' x='33499' y='83113'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='15936' id='19' name='Quantity Bikes Currently In Use' show-title='false' w='33000' x='66499' y='83113'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7372' id='15' name='Operational  Timeline of Selected Cohort' pane-specification-id='2' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' show-title='false' type-v2='color' w='14401' x='54052' y='12723' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98898' id='36' param='vert' type-v2='layout-flow' w='99376' x='312' y='551'>
+                <zone fixed-size='280' h='82833' id='8' is-fixed='true' name='Click the columns to explore longevity for each cohort' w='48121' x='312' y='551'>
+                  <layout-cache cell-count-w='9' minheight='196' non-cell-size-w='90' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6112' id='22' is-fixed='true' name='Operational Timeline Title' w='51255' x='48433' y='551'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38780' id='11' is-fixed='true' name='Operational  Timeline of Selected Cohort' show-title='false' w='51255' x='48433' y='6663'>
+                  <layout-cache cell-count-w='32' minheight='172' non-cell-size-w='72' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7372' id='15' name='Operational  Timeline of Selected Cohort' pane-specification-id='2' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' show-title='false' type-v2='color' w='14401' x='54052' y='12723'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37941' id='23' is-fixed='true' name='Average Ride Time (Hours)' w='51255' x='48433' y='45443'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='121' h='16065' id='18' is-fixed='true' name='Average Lifespan ' show-title='false' w='33125' x='312' y='83384'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='121' h='16065' id='20' is-fixed='true' name='Quantity Bikes Removed From Service' show-title='false' w='33125' x='33437' y='83384'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='121' h='16065' id='19' is-fixed='true' name='Quantity Bikes Currently In Use' show-title='false' w='33125' x='66562' y='83384'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AA004520-B96A-49B7-8A50-0BCF3BC70289}' />
+    </dashboard>
+    <dashboard name='NYC Citibike Bicycle Longevity Analysis' type='storyboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98098' id='9' param='vert' removable='false' type-v2='layout-flow' w='99002' x='499' y='951'>
+            <zone h='6183' id='10' type-v2='title' w='99002' x='499' y='951'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91915' id='7' param='vert' removable='false' type-v2='layout-flow' w='99002' x='499' y='7134'>
+              <zone h='91915' id='1' param='vert' removable='false' type-v2='layout-flow' w='99002' x='499' y='7134'>
+                <zone h='12010' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99002' x='499' y='7134' />
+                <zone h='79905' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99002' x='499' y='19144'>
+                  <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                    <story-points>
+                      <story-point caption='Overall fleet status' captured-sheet='Overall Fleet Status' id='1'>
+                        <capturedDeltas>
+                          <worksheet name='Average Lifespan '>
+                            <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (Bike Status,YEAR(First Recorded Activity (Year)))]'>
+                              <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+                                <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+                                <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+                              </groupfilter>
+                            </filter>
+                            <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (Bike Status,YEAR(Last Recorded Activity))]'>
+                              <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+                                <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+                                <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+                              </groupfilter>
+                            </filter>
+                          </worksheet>
+                          <worksheet name='Bike Quantity'>
+                            <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (Bike Status,YEAR(First Recorded Activity (Year)))]'>
+                              <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+                                <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+                                <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+                              </groupfilter>
+                            </filter>
+                            <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (Bike Status,YEAR(Last Recorded Activity))]'>
+                              <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+                                <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+                                <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+                              </groupfilter>
+                            </filter>
+                            <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (YEAR(Last Ride))]'>
+                              <groupfilter function='level-members' level='[yr:Last Ride:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                            </filter>
+                          </worksheet>
+                          <worksheet name='The majority of bikes deployed by citibike are no longer in use'>
+                            <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+                              <column-instance column='[Last Ride]' derivation='Year' name='[yr:Last Ride:ok]' pivot='key' type='ordinal' />
+                            </datasource-dependencies>
+                            <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (Bike Status,YEAR(Last Recorded Activity))]'>
+                              <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+                                <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+                                <groupfilter function='level-members' level='[yr:Last Ride:ok]' />
+                              </groupfilter>
+                            </filter>
+                          </worksheet>
+                          <worksheet name='Year of Last Ride'>
+                            <datasource-dependencies datasource='federated.0q6kmbt05hpunc15ltx2a0gpk5bf'>
+                              <column-instance column='[First Ride]' derivation='Year' name='[yr:First Ride:ok]' pivot='key' type='ordinal' />
+                            </datasource-dependencies>
+                            <filter class='categorical' column='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[Action (Bike Status,YEAR(First Recorded Activity (Year)))]'>
+                              <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+                                <groupfilter function='level-members' level='[Calculation_864128184285982729]' />
+                                <groupfilter function='level-members' level='[yr:First Ride:ok]' />
+                              </groupfilter>
+                            </filter>
+                          </worksheet>
+                        </capturedDeltas>
+                      </story-point>
+                      <story-point caption='Longevity varies between cohorts' captured-sheet='Cohort Longevity' id='6' />
+                    </story-points>
+                  </flipboard>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{E688A1DB-4D1A-499E-A482-14CCF8935086}' />
+    </dashboard>
+    <dashboard name='Overall Fleet Status'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='81920' id='26' param='horz' type-v2='layout-flow' w='99150' x='425' y='951'>
+            <zone h='81920' id='18' param='vert' type-v2='layout-flow' w='99150' x='425' y='951'>
+              <zone h='81920' id='16' type-v2='layout-basic' w='99150' x='425' y='951'>
+                <zone h='81920' id='20' name='The majority of bikes deployed by citibike are no longer in use' w='99150' x='425' y='951'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='16178' id='34' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='99150' x='425' y='82871'>
+            <zone h='16171' id='37' name='Bike Quantity' show-title='false' w='33050' x='425' y='82878'>
+              <layout-cache type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='16171' id='36' name='Quantity Bikes Removed From Service' show-title='false' w='33050' x='33475' y='82878'>
+              <layout-cache type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='16171' id='35' name='Quantity Bikes Currently In Use' show-title='false' w='33050' x='66525' y='82878'>
+              <layout-cache fixed-size-h='137' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='16052' id='27' name='The majority of bikes deployed by citibike are no longer in use' pane-specification-id='3' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' show-title='false' type-v2='color' w='19202' x='23379' y='26278' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='54' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='53' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='82806' id='20' is-fixed='true' name='The majority of bikes deployed by citibike are no longer in use' w='99546' x='227' y='421'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16052' id='27' name='The majority of bikes deployed by citibike are no longer in use' pane-specification-id='3' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' show-title='false' type-v2='color' w='19202' x='23379' y='26278'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='16333' id='37' is-fixed='true' name='Bike Quantity' show-title='false' w='33201' x='227' y='83246'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='16333' id='36' is-fixed='true' name='Quantity Bikes Removed From Service' show-title='false' w='33172' x='33428' y='83246'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='16333' id='35' is-fixed='true' name='Quantity Bikes Currently In Use' show-title='false' w='33173' x='66600' y='83246'>
+                  <layout-cache fixed-size-h='137' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E1F42E54-95A8-44BC-B062-61AB614A2CE0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Bike Quantity'>
+      <cards>
+        <edge name='left'>
+          <strip size='230'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EE37A952-5E92-4EBC-A740-6C926A00CFB6}' />
+    </window>
+    <window class='worksheet' name='Quantity Bikes Currently In Use'>
+      <cards>
+        <edge name='left'>
+          <strip size='192'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='230'>
+            <card pane-specification-id='0' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{969FB9DD-4953-461D-91D6-CF9B56713D32}' />
+    </window>
+    <window class='worksheet' name='Quantity Bikes Removed From Service'>
+      <cards>
+        <edge name='left'>
+          <strip size='192'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='192'>
+            <card pane-specification-id='0' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF1B584C-1510-45BB-8A52-C9D4A0761182}' />
+    </window>
+    <window class='worksheet' name='Average Lifespan '>
+      <cards>
+        <edge name='left'>
+          <strip size='518'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{733B7874-B86C-4547-89C7-D713C498934A}' />
+    </window>
+    <window class='worksheet' name='The majority of bikes deployed by citibike are no longer in use'>
+      <cards>
+        <edge name='left'>
+          <strip size='188'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+          <strip size='34'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='288'>
+            <card pane-specification-id='3' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6474CA6D-5A8A-4BC4-A566-4CA7DB5B24E8}' />
+    </window>
+    <window class='worksheet' name='Average Lifespan of Bikes Removed From Service by Year of Introduction to the Fleet'>
+      <cards>
+        <edge name='left'>
+          <strip size='188'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+          <strip size='34'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='192'>
+            <card pane-specification-id='3' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6795CC44-B43D-453E-8877-0161E137D180}' />
+    </window>
+    <window class='worksheet' name='Operational  Timeline of Selected Cohort'>
+      <cards>
+        <edge name='left'>
+          <strip size='360'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+          <strip size='33'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='192'>
+            <card pane-specification-id='2' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E1D5D641-A425-4140-8A77-F6A7F27567A7}' />
+    </window>
+    <window class='worksheet' name='Age of Bikes Removed From Service'>
+      <cards>
+        <edge name='left'>
+          <strip size='432'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+          <strip size='44'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='192'>
+            <card pane-specification-id='1' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF303AFC-E1EA-47C4-9C0B-0A48E13DEA22}' />
+    </window>
+    <window class='worksheet' name='Average Ride Time (Hours)'>
+      <cards>
+        <edge name='left'>
+          <strip size='188'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='45'>
+            <card type='columns' />
+          </strip>
+          <strip size='45'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='192'>
+            <card param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0q6kmbt05hpunc15ltx2a0gpk5bf].[none:Calculation_864128184285982729:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AB088A6-4FE2-435D-8B61-8153A6DF9DBD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F26D6A95-C151-424B-B208-12F45D78B41E}' />
+    </window>
+    <window class='dashboard' name='Overall Fleet Status'>
+      <viewpoints>
+        <viewpoint name='Bike Quantity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity Bikes Currently In Use'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity Bikes Removed From Service'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='The majority of bikes deployed by citibike are no longer in use'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{89FA3705-ED9B-4823-8246-2ECFB2ADBE84}' />
+    </window>
+    <window class='dashboard' name='Cohort Longevity'>
+      <viewpoints>
+        <viewpoint name='Average Lifespan '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Ride Time (Hours)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Click the columns to explore longevity for each cohort'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Operational  Timeline of Selected Cohort'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Operational Timeline Title'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Quantity Bikes Currently In Use'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity Bikes Removed From Service'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{88FE8CA3-582F-4A34-B93D-18961714A0E7}' />
+    </window>
+    <window class='dashboard' name='NYC Citibike Bicycle Longevity Analysis'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{23D0A3A5-D11F-4978-ADB5-4C66B0A7D3FA}' />
+    </window>
+    <window class='worksheet' name='Click the columns to explore longevity for each cohort'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{60ED60E3-2289-49AA-81ED-F017D3AFF8B3}' />
+    </window>
+    <window class='worksheet' name='Operational Timeline Title'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{51FA1431-3A66-417F-AA6D-E594E1B90713}' />
+    </window>
+  </windows>
+</workbook>
