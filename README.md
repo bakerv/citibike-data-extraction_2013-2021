@@ -12,10 +12,10 @@ Tableau provided the framework for making an interactive storyboard.
 
 Since Citibike began in 2013, more than 32,000 unique bike IDs have been observed in the publc data. As of January 2021, when Citibike stopped sharing information on bike ID, there were only 14,000 of those bikes currently in use.
 
-[<img src="https://github.com/bakerv/citibike-data-extraction_2013-2021/blob/main/images/overall_fleet_status.PNG">](href="href="https://public.tableau.com/app/profile/victor.baker/viz/NYCCitibikeBicycleLongevityAnalysis2013-2021/NYCCitibikeBicycleLongevityAnalysis")
+[<img src="https://github.com/bakerv/citibike-data-extraction_2013-2021/blob/main/images/overall_fleet_status.PNG">](https://public.tableau.com/app/profile/victor.baker/viz/NYCCitibikeBicycleLongevityAnalysis2013-2021/NYCCitibikeBicycleLongevityAnalysis)
 
 
-Bike longevity varies between cohorts. The initial cohort, released in 2013, had an observed lifespan of 5.8 years and nearly 1800 riding hours. The majority of the bikes were still in service in 2020, when they were replaced by 8000 brand new bikes. In contrast to this sucess story is 2015, the worst performing cohort of bikes to date. These 2500 bikes barely lasted a year, and only saw an average of 600 riding hours. In fact, no cohort since 2016 has a lifespan of more than 2 years. [Check out the dashboard](href="https://public.tableau.com/app/profile/victor.baker/viz/NYCCitibikeBicycleLongevityAnalysis2013-2021/NYCCitibikeBicycleLongevityAnalysis") to dive further into the cohort statistics. 
+Bike longevity varies between cohorts. The initial cohort, released in 2013, had an observed lifespan of 5.8 years and nearly 1800 riding hours. The majority of the bikes were still in service in 2020, when they were replaced by 8000 brand new bikes. In contrast to this sucess story is 2015, the worst performing cohort of bikes to date. These 2500 bikes barely lasted a year, and only saw an average of 600 riding hours. In fact, no cohort since 2016 has a lifespan of more than 2 years. [Check out the dashboard](https://public.tableau.com/app/profile/victor.baker/viz/NYCCitibikeBicycleLongevityAnalysis2013-2021/NYCCitibikeBicycleLongevityAnalysis) to dive further into the cohort statistics. 
 
  What does this mean for the current phase 3 expansion?
 - With Citibike and Lyft increasing the size of the bike fleet to 40,000 bikes, expect a signifigant amount of attrition to come with that process.
