@@ -165,6 +165,8 @@ Diving a little deeper in the data, we see that varies greatly depending on whic
 
 - After 2023, 10,000 bikes will need to be added to the fleet annually to maintain availability at 40,000 bikes.
 
+- The current expansion rate will become the required maintenance rate. It is quite possible this was planned.
+
 ## Limitations
 
 There is no way for us to know why bikes have been removed from service. Citibike does not release information on bike maintenance activities, and removed tracking data for individual bikes in February 2021.
